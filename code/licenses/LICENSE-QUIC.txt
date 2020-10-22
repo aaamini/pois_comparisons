@@ -1,0 +1,5 @@
+The QUIC software was released under the GPL license
+according to the original website: http://www.cs.utexas.edu/~sustik/QUIC/
+
+The GPLv3 license can be found here:
+https://www.gnu.org/licenses/gpl-3.0.en.html

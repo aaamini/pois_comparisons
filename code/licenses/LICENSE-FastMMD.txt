@@ -1,0 +1,21 @@
+This code did not have a specific license attached but was downloaded from the
+authors website (http://www.cs.cmu.edu/~deyum/)
+
+Below is the readme file for FastMMD.
+-------------------------------------
+This code include the implementation of MMD[3], MMD-linear[3], MMD by B-test[4], FastMMD-Fourier[1,2] and FastMMD-Fastfood[2].
+
+This is version 0.9 released on 02/20/2014.
+
+1. please run demo.m for an example;
+2. This code was written by Ji Zhao. If you want to give some feedback, please contact him by email zhaoji84@gmail.com.
+3. Please cite [1,2] if you use this code.
+
+Reference:
+[1] Ji Zhao, Deyu Meng. Ensemble of Circular Discrepancy for Efficient Two-Sample Test. NIPS Workshop on Randomized Methods for Machine Learning (RMML2013), 2013.
+[2] Ji Zhao, Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
+[3] A. Gretton, K. M. Borgwardt, M. J. Rasch, B. Scholkopf, and A. Smola. A kernel two-sample test. JMLR, 13(3):723–773, 2012.
+[4] W. Zaremba, A. Gretton and M. Blaschko. B-tests: Low Variance Kernel Two-Sample Tests. NIPS, 2013.
+[5] Q. V. Le, T. Sarlos, and A. J. Smola. Fastfood - Approximating Kernel Expansions in Loglinear Time. ICML, 2013.
+[6] Spiral WHT Package. http://www.spiral.net/software/wht.html
+
