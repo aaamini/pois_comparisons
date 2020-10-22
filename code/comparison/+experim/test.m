@@ -19,8 +19,6 @@ function cvArray = test(methodIdx, XtAll, exset)
     methodName = exset.batch{methodIdx};
 
     fprintf('Running method: %s ... \n', methodName);
-
-    initParallel(nWorkers);
     
     % Split into CV train and test sets
     cvArray = experim.create_cv_array(nCV,1);

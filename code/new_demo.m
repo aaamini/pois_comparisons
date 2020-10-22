@@ -13,7 +13,7 @@ rng('default')
 
 %% Experiment setup
 exset = struct();
-exset.datasetLabel = 'amazon';
+exset.datasetLabel = 'amazon';  % try 'movie' too
 exset.nDim = 50;
 
 exset.batch = {...
@@ -24,12 +24,10 @@ exset.batch = {...
         %'poisson-sqr-tune'};
 
 exset.nWorkers = 7;
-myCluster = parcluster('local');
-myCluster.NumWorkers = exset.nWorkers; 
-saveProfile(myCluster);    
+initParallel(exset.nWorkers); 
 
 exset.nSamples = 1000; 
-exset.nCV = 2;
+exset.nCV = 2; % try 3 or 5 as wel
 exset.mmdAggType = 'none';  % aggregation method across Gaussian kernel bandwidth (max | mean | none) during simulation
 exset.sigmaVec = 10.^(-2:0.2:0.8)';
 
