@@ -13,8 +13,7 @@ rng('default')
 
 %% Experiment setup
 exset = struct();
-% exset.datasetLabel = 'amazon';  % try 'movie' too
-exset.datasetLabel = 'movie';  % try 'movie' too
+exset.datasetLabel = 'amazon';  % try 'movie' too
 exset.nDim = 50;
 
 exset.batch = {...
