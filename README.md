@@ -1,4 +1,4 @@
-# pois_comparisons
+# POIS comparisons
 The MATLAB code for comparing the POIS model with others
 
 This code is based on the original code by Inouye et. al. avaiable at [sqr-graphical-model](https://github.com/davidinouye/sqr-graphical-models.)
