@@ -9,7 +9,7 @@ The code relies heavily on the original code, but the organization is different 
 We borrow the implemntation of PoiMix, CopulaPoi, IndNegBin, T-PGM and PoiSQR from the original code. We add POIS, Bootsrap, CopulaMult, IndMult. 
 Current code is not backward compatibile with Inouye et. al.'s, but there is enough similairy that you can hopefully port other methods that they implement to our code. 
 
-If you use this code, please consider citing their work as described in their Readme file as well as ours below:
+If you use this code, please consider citing Inouye et. al.'s work as described in their README.md file as well as ours below:
 
 - Zahra S. Razaee and Arash A. Amini, The Potts-Ising model for discrete multivariate data, NeurIPS 2020.
 
