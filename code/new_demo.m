@@ -14,14 +14,13 @@ rng('default')
 %% Experiment setup
 exset = struct();
 exset.datasetLabel = 'amazon';
-exset.nDim = 10;
+exset.nDim = 50;
 
 exset.batch = {...
         'po-is-tune',  'ind-mult', 'mixture-tune', ... 
-        %'copula-mult', 'bootstrap', ...
-        %'ind-negbin',  'copula-poi',...
-        %'tpgm-tune'};
-        };
+        'copula-mult', 'bootstrap', ...
+        'ind-negbin',  'copula-poi',...
+        'tpgm-tune'};
         %'poisson-sqr-tune'};
 
 exset.nWorkers = 7;
@@ -29,7 +28,7 @@ myCluster = parcluster('local');
 myCluster.NumWorkers = exset.nWorkers; 
 saveProfile(myCluster);    
 
-exset.nSamples = 100; 
+exset.nSamples = 1000; 
 exset.nCV = 2;
 exset.mmdAggType = 'none';  % aggregation method across Gaussian kernel bandwidth (max | mean | none) during simulation
 exset.sigmaVec = 10.^(-2:0.2:0.8)';
