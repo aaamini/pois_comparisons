@@ -36,9 +36,12 @@ end
 % Error check
 if(nDim > size(Xt,2)); warning('Requested number of dimensions (nDim = %d) is larger than the loaded dataset \n which has dimension (d = %d)', nDim, size(Xt,2)); end
 % fprintf('\nSuccessfully loaded dataset %s with\nd = %d, n = %d, sparsity = %3.1f\% and sum of all counts = %d\n\n', dataset, size(Xt,2), size(Xt,1),  100*nnz(Xt)/prod(size(Xt)), full(sum(Xt(:))));
-fprintf('\nSuccessfully loaded dataset "%s"\nsize      = %d x %d\nsparsity  = %3.1f %%\ntotal sum = %d\n\n', ...
-    vis.map_dataset(dataset), size(Xt,1), size(Xt,2),  100*(1-nnz(Xt)/prod(size(Xt))), full(sum(Xt(:))));
+fprintf('\nSuccessfully loaded dataset "%s"\nsize        = %d x %d\nsparsity    = %3.1f %%\n', ...
+    vis.map_dataset(dataset), size(Xt,1), size(Xt,2),  100*(1-nnz(Xt)/prod(size(Xt))));
 nDim = size(Xt,2);
+
+vis.print_freq_info(Xt)
+
 end
 
 %% Sort and filter to nDim dimensions

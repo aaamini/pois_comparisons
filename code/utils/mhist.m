@@ -17,10 +17,10 @@ case 'left'
     margin_top = 0.05;
 end
 % plot multiple histograms
-x_nrow = size(x,1)
+x_nrow = size(x,1);
 nbins = floor(x_nrow/5);
 nbins = min(nbins, 3);
-nbins = max(nbins, round(30*log10(x_nrow)))
+nbins = max(nbins, round(30*log10(x_nrow)));
 
 hist_args = {nbins,'Normalization','pdf','EdgeColor','none','FaceColor',0.1*ones(1,3)};
 %  if(size(x,1) > 10^2)

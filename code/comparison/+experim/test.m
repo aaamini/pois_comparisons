@@ -57,7 +57,6 @@ function cvArray = test(methodIdx, XtAll, exset)
 
             case 'po-is-tune'
                 lamVec = 10.^linspace(-4,-1.3, 15);
-                % lamVec = 10.^linspace(-3,-1, 12);
                 testPect = 0.3;
                 nreps = 3;
                 [XtSample, fLambda, timing, meanEvalTune]  = ... 

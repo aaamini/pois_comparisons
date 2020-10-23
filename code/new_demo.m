@@ -13,7 +13,7 @@ rng('default')
 
 %% Experiment setup
 exset = struct();
-exset.datasetLabel = 'amazon';  % try 'movie' too
+exset.datasetLabel = 'amazon';  % options are (amazon | movie)
 exset.nDim = 50;
 
 exset.batch = {...
@@ -27,7 +27,7 @@ exset.nWorkers = 7;
 initParallel(exset.nWorkers); 
 
 exset.nSamples = 1000; 
-exset.nCV = 5; % try 2 or 3 for faster simulation
+exset.nCV = 10; % try reducing for faster simulations faster simulation
 exset.mmdAggType = 'none';  % aggregation method across Gaussian kernel bandwidth (max | mean | none) during simulation
 exset.sigmaVec = 10.^(-2:0.2:0.8)';
 
