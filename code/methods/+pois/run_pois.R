@@ -30,8 +30,8 @@ solver = ifelse(bisect_flag, "coord", "global")
 # }
 
 trainTime = system.time( out <- fit_pois(Xt, solver = solver, method = method) )["elapsed"]
-theta_est = out$theta
-gam_est = out$gam
+theta_est = out$Theta
+gam_est = out$Gamma
 gam_est = (gam_est + t(gam_est))/2
 # image(Matrix(gam_est))
 # sampleTime = system.time( XtSample <- toxGenCpp(n, theta_est, gam_est, burn_in = 5000) )["elapsed"]

@@ -14,7 +14,7 @@ trainTime = system.time(
 n_mods = length(models)
 sampleTime = system.time( 
     XtSampleS <- lapply(models, function(model) 
-        sample_pois(nSamples, model$theta, model$gamh, burn_in = 5000, spacing = 100, verb = F))
+        sample_pois(nSamples, model$Theta, model$Gamma, burn_in = 5000, spacing = 100, verb = F))
 )["elapsed"]
 
 # print(XtSampleS)
